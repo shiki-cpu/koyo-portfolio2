@@ -1,0 +1,157 @@
+html{
+    font-size:62.5%;
+    
+}
+body{
+    margin:0; /*bodyにmarginを０で指定することで、ヘッダーを横幅１００％まで広げる*/
+    
+    background-image:url("../images/x-back.jpeg");
+    background-position:left top;
+    background-size:cover;
+    background-attachment:fixed;
+    z-index:-1;
+}
+.container{
+    background-color:rgba(255,255,255,0.7);
+    margin-bottom:0;
+}
+
+.header{
+    margin-top:-2rem;
+    box-sizing:border-box;
+    font-size:2rem;
+    height:27rem;
+    background-color:#333333;
+    color:#cccccc;
+    padding:2rem;
+}
+.header p{
+    font-family: 'Montserrat', sans-serif;
+    margin:5rem 0 0 18rem;
+    font-size:4rem;
+}
+
+.link ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    font-size:2.8rem;
+    color:#cccccc;
+    list-style:none;
+    padding:0 3rem;
+    text-align:center;
+    margin:0 auto;
+}
+.link ul li{
+    margin:8rem 2.5rem 0 2.5rem;
+    text-align:center;
+}
+.link ul li a{
+    position:relative;
+    display:inline-block;
+    color:#cccccc;
+    list-style:none;
+    text-decoration:none;
+    padding-bottom:1rem;
+}
+.link a::after{
+    position:absolute;
+    bottom:-4px;
+    left:0;
+    content: '';
+    width:100%;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+    border-bottom:solid 0.3rem #cccccc;
+}
+.link a:hover::after{
+    transform: scale(1,1);
+}
+.link a:hover{
+    color:#ccff99;
+}
+
+.profile-img{
+    text-align:center;
+}
+
+.profile-img img{
+    border-radius:50%;
+    border:solid 5px #333333;
+    width:35rem;
+    height:35rem;
+    margin-top:15rem;
+    transition-duration:0.5s;
+}
+
+.flex-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin:5rem 5rem 0 5rem;
+}
+.intro,.history,.skill,.fromnow{
+    padding:2rem 2rem 6rem 2rem;
+    border:solid 3px #333333;
+    border-radius:10%;
+    margin:5rem;
+}
+.skill{
+    padding-bottom:6rem;
+    height:30rem;
+
+}
+.flex-container #Txt{
+    text-align:center;
+    font-weight:900;
+    font-size:4rem;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+    position:relative;
+    border-bottom:solid 6px #dbff71;
+}
+.flex-container #Txt:after{
+    position:absolute;
+    content:"";
+    display:block;
+    border-bottom:solid 6px #75a9ff;
+    width:50%;
+}
+.flex-container #txt{
+    font-family: 'M PLUS 1p', sans-serif;
+    padding-top:3rem;
+    text-align:center;
+    font-size:2rem;
+    line-height:1.8;
+    letter-spacing:0.1rem;
+}
+
+.flex-container #webtxt{
+    display:block;
+    text-align:center;
+}
+
+.footer{
+    margin-top:5rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#333333;
+    height:27rem;
+}
+.footer p{
+    font-size:4rem;
+    font-family:'Montserrat', sans-serif;
+    color:#cccccc;
+}
+
+/*PAGE TOPボタン追加*/
+.fa-angle-double-up{
+    border-radius:50%;
+    color: #75A9FF;
+    position: fixed;
+    right: 6rem;
+    bottom: 2rem;
+    cursor: pointer;
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="stylesheet" href="../css/gallery.css">
+    <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/gallery.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/icon.jpeg">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <p>WORKS</p>
+        <div class="link">
+            <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <p>※　画像の7枚目まではクリックすると拡大画像が表示されます。</p>
+    <div class="gallery" id="Gallery">
+        <ul>
+            <li><figure><img src="../images/robot-img.png" id="robot"></figure>
+                <span id="txt">Mayaで、ロボットアニメーションを制作しました。ロボットの複雑な形状のモデリングは、難しかったです。</span></li>
+            <li><figure><img src="../images/fish-scene.png" id="fish"></figure>
+                <span id="txt">Mayaで、魚のシーンを制作しました。水中を表現するために、光のエフェクトが自然に見えるように調整しました。</span></li>
+            <li><figure><img src="../images/sofa-img.png" id="sofa"></figure>
+                <span id="txt">Mayaで、ソファを制作しました。柔らかい感じを出すため、丸みを出しました。</span></li>
+            <li><figure><img src="../images/sugar-pod-render.png" id="sugar"></figure>
+                <span id="txt">Mayaでポッドを制作しました。レンダリングした時、陶器感が出るようにシェーディングしました。</span></li>
+            <li><figure><img src="../images/chair-render.png" id="chair"></figure>
+                <span id="txt">Mayaで、チェアーを制作しました。初めてのレンダリングだったので、苦労しました。</span></li>
+            <li><figure><img src="../images/palm-img.png" id="palm"></figure>
+                <span id="txt">Mayaで、手を作成しました。複雑な形状なので、参考書などを見てモデリングに取り組みました。</span></li>
+            <li><figure><img src="../images/ytweb-img.png" id="ytweb"></figure>
+                <span id="txt1">他社のwebサイトを制作しました。要素の上に要素をのせたり、レスポンシブ対応をしました。<br><span id="important">クリックして拡大表示してください</span></span></li>
+            <li><figure><a href="portworks.html"><img src="../images/portfolio1.jpg" alt="申し訳ございません。画像が表示できません。" id="port"></a></figure>
+                <span id="txt">PortfolioをAdobe Illustratorで制作しました。<br><span id="important">クリックして作品一覧をご覧ください</span></span></li>
+            <li><figure><a href="sketch.html"><img src="../images/palm-sketch.png"></a></figure>
+                <span id="txt">デッサン、レンダリングを制作しました。<br><span id="important">クリックして作品一覧をご覧ください。</span></span></li>
+            
+        </ul>
+    </div>
+
+    <div id="back-curtain">
+    </div>
+
+    <div id="largeImage1">
+        <img width="800px" src="../images/robot-img.png">
+    </div>
+    <div id="largeImage2">
+        <img width="800px" src="../images/fish-scene.png">
+    </div>
+    <div id="largeImage3">
+        <img width="800px" src="../images/sofa-img.png">
+    </div>
+    <div id="largeImage4">
+        <img width="800px" src="../images/sugar-pod-render.png">
+    </div>
+    <div id="largeImage5">
+        <img width="800px" src="../images/chair-render.png">
+    </div>
+    <div id="largeImage6">
+        <img width="800px" src="../images/palm-img.png">
+    </div>
+    
+    <div id="largeImage7">
+        <img width="800px" src="../images/ytweb-img.png">
+    </div>
+
+    
+    <i class="fas fa-angle-double-up fa-fw fa-6x"></i>
+    
+    <div class="footer">
+        <p>KOYO PORTFOLIO</p>
+    </div>
+
+
+
+
+</body>
+</html>

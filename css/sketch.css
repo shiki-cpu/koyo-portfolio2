@@ -1,0 +1,190 @@
+html{
+    font-size:62.5%;
+    
+}
+body{
+    background-color:#DCDCDC;
+    margin:0; /*bodyにmarginを０で指定することで、ヘッダーを横幅１００％まで広げる*/
+    height:100%;
+}
+.header{
+    margin-top:-2rem;
+    box-sizing:border-box;
+    font-size:2rem;
+    height:28rem;
+    background-color:#333333;
+    color:#cccccc;
+    padding:2rem;
+}
+.header p{
+    font-family: 'Montserrat', sans-serif;
+    margin:5rem 0 0 18rem;
+    font-size:4rem;
+}
+
+.link ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    font-size:2.8rem;
+    color:#cccccc;
+    list-style:none;
+    padding:0 3rem;
+    text-align:center;
+    margin:0 auto;
+}
+.link ul li{
+    margin:8rem 2.5rem 0 2.5rem;
+    text-align:center;
+}
+.link ul li a{
+    position:relative;
+    display:inline-block;
+    color:#cccccc;
+    list-style:none;
+    text-decoration:none;
+    padding-bottom:1rem;
+}
+.link a::after{
+    position:absolute;
+    bottom:-4px;
+    left:0;
+    content: '';
+    width:100%;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+    border-bottom:solid 0.3rem #cccccc;
+}
+.link a:hover::after{
+    transform: scale(1,1);
+}
+.link a:hover{
+    color:#ccff99;
+}
+
+.slide{
+    text-align:center;
+    margin-top:2rem;
+    margin-bottom:5rem;
+    position:relative;
+}
+.slide img{
+    height:50rem;
+    display:none;
+    border: 3px solid #333333;
+    box-shadow:0px 0px 5px 0px rgba(0,0,0,0.5);
+    border-radius:10px;
+}
+
+.button #rev,.button #next{
+    font-size:5rem;
+    border-style:none;
+    background:#dcdcdc;
+    cursor:pointer;
+}
+
+.button #rev:hover{
+    color:#4689ff;
+}
+.button #next:hover{
+    color:#4689ff;
+}
+.rev-button{
+    position:absolute;
+    top:50%;
+    left:15%;
+    
+}
+.next-button{
+    position:absolute;
+    top:50%;
+    right:15%;
+    
+}
+
+.Fukidasi{
+    height:5rem;
+}
+.fukidasi {
+    position: relative;
+    display: inline-block;
+    justify-content:center;
+    text-align:center;
+    margin-left:72%;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    font-family:'M PLUS 1p', sans-serif;
+    background: #FFF;
+    border: solid 3px #555;
+    border-radius:10px;
+    box-sizing: border-box;
+}
+  
+  .fukidasi:before {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    margin-left: -15px;
+    border: 12px solid transparent;
+    border-top: 12px solid #FFF;
+    z-index: 2;
+}
+  
+  .fukidasi:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -17px;
+    border: 14px solid transparent;
+    border-top: 14px solid #555;
+    z-index: 1;
+}
+  
+  .fukidasi p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer{
+    margin-top:18rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#333333;
+    height:27rem;
+}
+.footer p{
+    font-size:4rem;
+    font-family:'Montserrat', sans-serif;
+    color:#cccccc;
+}
+
+.toTOP {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    margin:5rem 16%;
+    width:7rem;
+    height:3rem;
+    font-size:2rem;
+    transition-duration:0.3s;
+  }
+  .toTOP:hover{
+      background:#ccff99;
+  }
+  .toTOP:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
